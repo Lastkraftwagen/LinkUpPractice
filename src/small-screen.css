@@ -1,0 +1,41 @@
+
+ @media screen and (max-width: 890px) {
+    .logo {
+      float: none;
+      display: block;
+    }
+    .header
+    {
+        height: auto;
+    }
+    .search_block
+    {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .topnav {
+      float: none;
+      text-align: center;
+    }
+    .withline { 
+        border-left: none;
+        margin-right: 0px;
+       }
+       .topnav a{
+        float: none;
+        margin-left: 0px;
+       }
+    .drop_down
+    {
+        display: none;
+    }
+    .d1 input
+    {
+        width: 80%;
+    border-radius: 10px 0px 0px 10px;
+
+    }
+    .d1 button{
+        width: 20%;
+    }
+}

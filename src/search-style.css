@@ -1,38 +1,82 @@
 * {box-sizing: border-box;}
-
-form {
-  width: 300px;
-  margin: 0 auto;
+@font-face {
+    font-family: "RalewayB";
+    src: url("assets/fonts/RalewayBold/RalewayBold.eot");
+    src: url("assets/fonts/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+    url("assets/fonts/RalewayBold/RalewayBold.woff") format("woff"),
+    url("assets/fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
+
+
 .d1 
 {
-    background: #A3D0C3;
-    padding: 30px 0
+    margin: 0 auto;
+    height: 100px;
+    filter: drop-shadow(3px 3px 4px gray);
+    width: 80%;
 }
 
-.d1 select
+.drop_down
 {
-    
+    float: left;
+    display: block;
+    text-align: center;
+    border-right: 1px solid lightgrey;
+    margin-top: auto;
+    padding-top: 29px; 
+    font-size: 13px;
+    margin-bottom: auto;
+    background-color: white;
+    height: 72px;
+    width: 15%;
+    border-radius: 10px 0px 0px 10px;
 }
+
 .d1 input {
-  width: 100%;
-  height: 42px;
-  right: 120px;
-  padding-left: 10px;
-  border: 2px solid #7BA7AB;
-  border-radius: 5px;
-  outline: none;
-  background: #F9F0DA;
-  color: #9E9C9C;
+    height: 72px;
+    width: 65%;
+    font-family: "RalewayB";
+    min-width: 120px;
+    padding-left: 10px;
+    border: none;
+    background: rgb(255, 255, 255);
+    color: #9E9C9C;
+    float: left;
+    }
+
+#chkbx
+{
+    display: none;
 }
+#chkbx:checked ~ .burger
+{
+    display: block;
+}
+#chkbx:checked ~ .drop_down
+{
+    border-radius: 10px 0 0 0 ;
+}
+
+.d1 .burger
+{
+    height: 50px;
+    width: 15%;
+    background: red;
+    display: none;
+    float: left;
+}
+
 .d1 button {
-  position: absolute; 
-  float: left;
-  right: 0px;
-  width: 120px;
-  height: 42px;
-  border: none;
-  background: #7BA7AB;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
+    width: 20%;
+    height: 72px;
+    border: none;
+    background: #15a4b5;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    font-family: "RalewayB";
 }
