@@ -11,7 +11,7 @@ form {
     
     background: #A3D0C3;
 }
-.d1 input {
+/* .d1 input {
   width: 100%;
   height: 42px;
   padding-left: 10px;
@@ -20,7 +20,7 @@ form {
   outline: none;
   background: #F9F0DA;
   color: #9E9C9C;
-}
+} */
 .d1 button {
   position: absolute; 
   top: 0;
