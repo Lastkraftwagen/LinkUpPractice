@@ -13,15 +13,18 @@
 .d1 
 {
     margin: 0 auto;
-    height: 100px;
-    filter: drop-shadow(3px 3px 4px gray);
+    height: 71px;
+    /* filter: drop-shadow(3px 3px 4px gray);  */
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 4px gray;
     width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .drop_down
 {
-    float: left;
-    display: block;
     text-align: center;
     border-right: 1px solid lightgrey;
     margin-top: auto;
@@ -43,7 +46,6 @@
     border: none;
     background: rgb(255, 255, 255);
     color: #9E9C9C;
-    float: left;
     }
 
 #chkbx
@@ -65,18 +67,18 @@
     width: 15%;
     background: red;
     display: none;
-    float: left;
 }
 
 .d1 button {
     width: 20%;
     height: 72px;
     border: none;
+    min-width: 95px;
+    right: 0;
     background: #15a4b5;
     border-radius: 0 10px 10px 0;
     color: white;
     cursor: pointer;
-    float: left;
     font-size: 14px;
     font-family: "RalewayB";
 }

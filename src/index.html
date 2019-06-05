@@ -1,44 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="search-style.css" />
+    <link rel="stylesheet" type="text/css" href="img-style.css" />
+    <link rel="stylesheet" type="text/css" href="scroll-style.css" />
+
     <link rel="stylesheet" type="text/css" href="small-screen.css" />
     <title>Document</title>
 </head>
+
 <body>
-    <div class="header">
+    <header>
         <img class="logo" src="assets/images/logo.png">
-        
         <div class="topnav">
             <a class="withline" href="#">SIGN UP</a>
             <a href="#">LOG IN</a>
-            <a href="#" >ABOUT US</a>
-            <a href="#" >ALL PRODUCTS</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">ALL PRODUCTS</a>
         </div>
-    </div>
-
-    <div class="topblock">
-        <!-- <img src="images/firstBlock.jpg" width="100%"> -->
-        <div class="search_block" >
-            <p class="toptext">Quick Search for Your <span class="green">Perfect Product</span></p>
-            <p>INNOVATE &#8226 LIST &#8226 CONNECT</p>
-            <div class="d1">
-                <input type="checkbox" id="chkbx"/>
-                <label class="drop_down" for="chkbx">Category</label>
-                <input type="text" placeholder="Search"/>
-                <button type="submit">START SEARCHING</button>
-                <div class="burger"></div>
+    </header>
+    <main>
+        <div class="topblock">
+            <!-- <img src="images/firstBlock.jpg" width="100%"> -->
+            <div class="search_block">
+                <p class="toptext">Quick Search for Your <span class="green">
+                        Perfect Product</span></p>
+                <p>INNOVATE &#8226 LIST &#8226 CONNECT</p>
+                <div class="d1">
+                    <input type="checkbox" id="chkbx" />
+                    <label class="drop_down" for="chkbx">Category</label>
+                    <input type="text" placeholder="Search" />
+                    <button type="submit">START SEARCHING</button>
+                    <div class="burger"></div>
+                </div>
             </div>
-
-        </div> 
-        <div class="pics">
-            
-
+            <div class="pics">
+                <div class="plane">
+                    <img height="30" width="30" src="assets/images/grid.png">
+                    <p>All categories</p>
+                </div>
+                <div class="plane">
+                    <img height="40" width="30" src="assets/images/tap.png">
+                    <p>How it works?</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="midblock">
-    </div>
+        </div>
+        <div class="midblock">
+            <div class="mid_text">
+                <p class="head_text"><b>Most Popular Products</b></p>
+                <p class="lower_text">
+                    <b>This is the list of products
+                        that are most interested in users</b></p>
+            </div>
+            <div class="gallery_holder">
+                <div class="gallery">
+                    <img src="assets/images/1.jpg" alt="Cinque Terre" width="600" height="400">
+                    <p class="desc">Hubstaff directory</p>
+                </div>
+                <div class="gallery">
+                    <img src="assets/images/2.jpg" alt="Forest" width="600" height="400">
+                    <div class="desc">Jira 2017</div>
+                </div>
+                <div class="gallery">
+                    <img src="assets/images/3.jpg" alt="Northern Lights" width="600" height="400">
+                    <div class="desc">Slack Pro</div>
+                </div>
+                <div class="gallery">
+                    <img src="assets/images/4.jpg" alt="Northern Lights" width="600" height="400">
+                    <div class="desc">Trave Cat</div>
+                </div>
+                <div class="gallery">
+                    <img src="assets/images/1.jpg" alt="Northern Lights" width="600" height="400">
+                    <div class="desc">Network</div>
+                </div>
+                <div class="gallery">
+                    <img src="assets/images/4.jpg" alt="Northern Lights" width="600" height="400">
+                    <div class="desc">Time Camp</div>
+                </div>
+            </div>
+            <div class="allproducts_link">
+                <a href="#">
+                    All products
+                </a>
+            </div>
+        </div>
+
+        <div class="bottomblock">
+            <div class="your-class">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
 </body>
+
 </html>
