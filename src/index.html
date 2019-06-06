@@ -3,6 +3,8 @@
 
 <head>
     <script src="script.js"></script>
+    <script src="buff.js"></script>
+    <link rel="stylesheet" type="text/css" href="carousel-style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="search-style.css" />
@@ -84,18 +86,43 @@
                 </div>
             </div>
             <div class="allproducts_link">
-                <a href="#">
-                    All products
-                </a>
+                <a href="#"> All products</a>
             </div>
         </div>
 
         <div class="bottomblock">
-            <div class="your-class">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+            <div class="carousel_holder">
+                <button class="button" id="prev" onclick="prev_click()">Prev</button>
+                <div id="carousel" class="slider">
+                    <div class="rightHide">
+                        <img src="assets/images/2.jpg">
+                        
+                    </div>
+                    <div class="hide">
+                        <img src="assets/images/3.jpg">
+                    </div>
+                    <div class="hide">
+                        <img src="assets/images/fon.png">
+                    </div>
+                    <div class="hide">
+                        <img src="assets/images/4.jpg">
+                    </div>
+                    <div class="leftHide">
+                        <img src="assets/images/4.jpg">
+                    </div>
+                    <div class="prev">
+                        <img src="assets/images/1.jpg">
+                    </div>
+                    <div class="current">
+                        <img src="assets/images/2.jpg">                     
+                    </div>
+                    <div class="next">
+                            <img src="assets/images/1.jpg">                     
+                    </div>
+                </div>
+                <button class="button" id="next" onclick="next_click()">Next</button>
             </div>
+        </div>
         </div>
     </main>
     <footer class="footer">

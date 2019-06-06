@@ -5,27 +5,43 @@ html, body, main {
     padding: 0;
 }
 
-#carousel {
-    position: relative;
-    height: 400px;
-    top: 50%;
-    transform: translateY(-50%);
-    overflow: hidden;
+.bottomblock
+{
+    height: 900px;
+    width: 100%;
+    background: #15a4b5;
+
 }
 
-div {
+.carousel_holder
+{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+#carousel {
+    height: 400px;
+    width: 90%;
+
+}
+
+.slider div {
     position: absolute;
-    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    transition: transform 0.5s, left 0.7s, opacity 0.5s, z-index 0.1s;
     opacity: 1;
 }
 
-div img {
+.slider div img {
     width: 400px;
     transition: width 1s;
 }
 
 
-div.prev {
+.slider div.prev {
     z-index: 5;
     left: 30%;
     transform: translateY(50px) translateX(-50%);
@@ -33,63 +49,61 @@ div.prev {
 
 }
 
-div.prev img {
+.slider  div.prev img {
     width: 300px;
 }
 
-div.leftHide {
+.slider  div.leftHide {
     z-index: 4;
     left: 15%;
     transform: translateY(50%) translateX(-50%);
     opacity: 0;
 }
 
-div.leftHide img {
+.slider div.leftHide img {
     width: 200px;
 }
 
-div.hide {
+.slider div.hide {
     z-index: 4;
-    left: 15%;
+    left: 50%;
     transform: translateY(50%) translateX(-50%);
     opacity: 0;
 }
 
-div.hide img {
+.slider div.hide img {
     width: 200px;
 }
 
-div.current {
+.slider div.current {
     z-index: 10;
     left: 50%;
     transform: translateY(0px) translateX(-50%);
 }
 
-div.next {
+.slider div.next {
     z-index: 5;
     left: 70%;
     transform: translateY(50px) translateX(-50%);
     opacity: 0.6;
 }
 
-div.next img {
+.slider div.next img {
     width: 300px;
 }
 
-div.rightHide {
+.slider div.rightHide {
     z-index: 4;
     left: 85%;
     transform: translateY(50%) translateX(-50%);
     opacity: 0;
 }
 
-div.rightHide img {
+.slider div.rightHide img {
     width: 200px;
 }
 
-.buttons {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px;
+.button {
+   width: 10%;
+   z-index: 9;
 }

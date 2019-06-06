@@ -16,8 +16,10 @@
 
 .midblock {
     background: #f7f7f7;
-    height: 100%;
-    position: flex;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
 }
 .mid_text {
     padding-top: 60px;
@@ -90,9 +92,11 @@
     margin-right: auto;
     margin-left: auto;
     width: 200px;
+    padding: 20px;
     font-size: 20px;
-    padding-top: 50px;
-    margin-bottom: 50px;
+    height: auto;
+    text-align: center;
+
 }
 
 .allproducts_link a {
