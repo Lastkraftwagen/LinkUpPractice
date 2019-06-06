@@ -5,7 +5,6 @@
     }
     header {
         height: auto;
-        /* height: 350px; */
         flex-direction: column;
         border-bottom: 1px solid lightgray;
     }
@@ -38,7 +37,7 @@
         width: 15%;
     }
     .d1 {
-        width: 100%;
+        width: 95%;
         margin: 0;
     }
     .d1 input {
@@ -53,6 +52,9 @@
         width: 270px;
         height: 270px;
     }   
+    .slider div .text {
+        width: 98%;
+    }
     .gallery
     {
         width: 460px;
