@@ -2,7 +2,6 @@ function moveToSelected(element) {
     const divs = document.getElementById('carousel').children;
     const mass = [...divs];
     
-    let selected = document.querySelector('.next');
     if (element == "next") {
     } else if (element == "prev") {
         selected = document.querySelector('.prev');
@@ -49,14 +48,26 @@ function moveToSelected(element) {
 
         return;
     }
+    else if(index == mass.length-3)
+    {
+        hide(mass);
+        mass[0].className = 'rightHide'
+        mass[mass.length - 4].className = 'leftHide';
+
+        mass[mass.length - 3].className = 'prev';
+        mass[mass.length - 2].className = 'current';
+        mass[mass.length - 1].className = 'next';
+        console.log('4th');
+
+        return;
+    }
     else{
-        console.log('4');
-        console.log(mass);
-    
+        console.log('5th');
+        no_hide(mass);
         let i = mass.indexOf(document.querySelector('.prev'));
         mass[i].className = 'leftHide';
         i = mass.indexOf(document.querySelector('.next'));
-        mass[i].className = 'rightHide';
+        mass[i+2].className = 'rightHide';
         mass[index+1].className = 'current';
         mass[index].className = 'prev';
         mass[index+2].className = 'next';
@@ -102,15 +113,13 @@ const hide = (mass) => {
     });
 }
 
-// const hide = (mass, flag) => { 
-//     mass.forEach(element => {
-//         if(flag){
-//             if(element.className != 'prev' || element.className != 'next'){
-//                 element.className='hide';
-//             }
-//         }
-//     });
-// }
+const no_hide = (mass) => { 
+    mass.forEach(element => {
+        if(element.className != 'prev' && element.className != 'next'){
+            element.className='hide';
+        }
+    });
+}
 
 
 // function nextAll(elem) {
