@@ -1,15 +1,19 @@
 @font-face {
     font-family: "Raleway";
-    src: url("assets/fonts/RalewayLight/RalewayLight.eot");
-    src: url("assets/fonts/RalewayLight/RalewayLight.eot?#iefix")format("embedded-opentype"), url("assets/fonts/RalewayLight/RalewayLight.woff") format("woff"), url("assets/fonts/RalewayLight/RalewayLight.ttf") format("truetype");
+    src: url("../assets/fonts/RalewayLight/RalewayLight.eot");
+    src: url("../assets/fonts/RalewayLight/RalewayLight.eot?#iefix")format("embedded-opentype"), 
+    url("../assets/fonts/RalewayLight/RalewayLight.woff") format("woff"), 
+    url("../assets/fonts/RalewayLight/RalewayLight.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "RalewayB";
-    src: url("assets/fonts/RalewayBold/RalewayBold.eot");
-    src: url("assets/fonts/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"), url("assets/fonts/RalewayBold/RalewayBold.woff") format("woff"), url("assets/fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+    src: url("../assets/fonts/RalewayBold/RalewayBold.eot");
+    src: url("../assets/fonts/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+    url("../assets/fonts/RalewayBold/RalewayBold.woff") format("woff"), 
+    url("../assets/fonts/RalewayBold/RalewayBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -35,7 +39,7 @@ header {
     height: 70px;
     overflow: hidden;
     background-color: #e4e6ee;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 10;
@@ -78,7 +82,7 @@ header {
 
 .topblock {
     overflow: hidden;
-    background-image: url("assets/images/fon.png");
+    background-image: url("../assets/images/fon.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,6 +137,13 @@ header {
     flex-direction: row;
     align-items: center;
     border-radius: 4px;
+    
+}
+
+.pics a
+{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
 }
 
 .plane:hover {

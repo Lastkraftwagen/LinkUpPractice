@@ -4,13 +4,15 @@
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="script.js"></script>
-    <script src="buff.js"></script>
-    <link rel="stylesheet" type="text/css" href="carousel-style.css" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" type="text/css" href="search-style.css" />
-    <link rel="stylesheet" type="text/css" href="img-style.css" />
-    <link rel="stylesheet" type="text/css" href="small-screen.css" />
+    <script src="/js/script.js"></script>
+    <meta charset="UTF-8">
+
+    <script src="/js/buff.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/carousel-style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/search-style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/img-style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/small-screen.css" />
     <title>Document</title>
 </head>
 
@@ -26,32 +28,40 @@
     </header>
     <main>
         <div class="topblock">
-            <!-- <img src="images/firstBlock.jpg" width="100%"> -->
             <div class="search_block">
                 <p class="toptext">Quick Search for Your <span class="green">
                         Perfect Product</span></p>
                 <p>INNOVATE &#8226 LIST &#8226 CONNECT</p>
                 <div class="d1">
                     <input type="checkbox" id="chkbx" />
-                    <label class="drop_down" for="chkbx">Category</label>
+                    <label class="drop_down" for="chkbx">Category ↓</label>
                     <input type="text" placeholder="Search" />
                     <button type="submit">START SEARCHING</button>
-                    <div class="burger"></div>
+                    <div class="burger">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
                 </div>
             </div>
             <div class="pics">
-                <div class="plane">
-                    <img height="30" width="30" src="assets/images/grid.png">
-                    <p>All categories</p>
-                </div>
-                <div class="plane">
-                    <img height="40" width="30" src="assets/images/tap.png">
-                    <p>How it works?</p>
-                </div>
+                <a href="#all">
+                    <div class="plane">
+                        <img height="30" width="30" src="assets/images/grid.png">
+                        <p>All categories</p>
+                    </div>
+                </a>
+                <a href="#bottom">
+                    <div class="plane">
+                        <img height="40" width="30" src="assets/images/tap.png">
+                        <p>How it works?</p>
+                    </div>
+                </a>
             </div>
         </div>
-        </div>
+    </div>
         <div class="midblock">
+            <a name="all"></a>
             <div class="mid_text">
                 <p class="head_text"><b>Most Popular Products</b></p>
                 <p class="lower_text">
@@ -88,7 +98,8 @@
                 <a href="#"> All products</a>
             </div>
         </div>
-        <div class="bottomblock">
+        <div class="bottomblock" >
+            <a name="bottom"></a>
                 <div class="mid_text">
                         <p class="head_text">Testimonials</p>
                         <What class="lower_text">
