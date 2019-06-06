@@ -1,31 +1,86 @@
 function moveToSelected(element) {
-
+    const divs = document.getElementById('carousel').children;
+    const mass = [...divs];
+    
+    let selected = document.querySelector('.next');
     if (element == "next") {
-        var selected = document.querySelector('.next');
     } else if (element == "prev") {
-        var selected = document.querySelector('.prev');
+        selected = document.querySelector('.prev');
     } else {
-        var selected = element;
+        selected = element;
     }
 
-    var next = selected.nextElementSibling;
-    var prev = selected.previousElementSibling;
-    var prevSecond = prev.previousElementSibling;
-    var nextSecond = next.nextElementSibling;
-    
-    selected.classList.remove(element);
-    selected.classList.add('selected');
-    
-    next.classList.remove(next.className);
-    next.classList.add('next');
+    let index = mass.indexOf(document.querySelector(".current"));
 
-    prev.classList.remove(prev.className);
-    prev.classList.add('prev');
+    if(index == mass.length - 1)
+    {
+        hide(mass);
+        mass[2].className = 'rightHide'
+        mass[mass.length - 2].className = 'leftHide';
 
-    nextSecond.classList.remove(nextSecond.className);
-    nextSecond.classList.add('nextRightSecond');
-    prevSecond.classList.remove(prevSecond.className);
-    prevSecond.classList.add('prevLeftSecond');
+        mass[0].className = 'current';
+        mass[1].className = 'next';
+        mass[mass.length - 1].className = 'prev';
+        console.log('1st');
+        return;
+    }
+    else if(index == mass.length - 2)
+    {
+        hide(mass);
+        mass[1].className = 'rightHide'
+        mass[mass.length - 3].className = 'leftHide';
+
+        mass[mass.length - 1].className = 'current';
+        mass[mass.length - 2].className = 'prev';
+        mass[0].className = 'next';
+        console.log('2nd');
+        return;
+    }
+    else if(index == 0)
+    {
+        hide(mass);
+        mass[3].className = 'rightHide'
+        mass[mass.length - 1].className = 'leftHide';
+
+        mass[0].className = 'prev';
+        mass[1].className = 'current';
+        mass[2].className = 'next';
+        console.log('3nd');
+
+        return;
+    }
+    else{
+        console.log('4');
+        console.log(mass);
+    
+        let i = mass.indexOf(document.querySelector('.prev'));
+        mass[i].className = 'leftHide';
+        i = mass.indexOf(document.querySelector('.next'));
+        mass[i].className = 'rightHide';
+        mass[index+1].className = 'current';
+        mass[index].className = 'prev';
+        mass[index+2].className = 'next';
+    }
+
+    
+    // var next = selected.nextElementSibling;
+    // var prev = selected.previousElementSibling;
+    // var prevSecond = prev.previousElementSibling;
+    // var nextSecond = next.nextElementSibling;
+    
+    // selected.classList.remove(element);
+    // selected.classList.add('selected');
+    
+    // next.classList.remove(next.className);
+    // next.classList.add('next');
+
+    // prev.classList.remove(prev.className);
+    // prev.classList.add('prev');
+
+    // nextSecond.classList.remove(nextSecond.className);
+    // nextSecond.classList.add('nextRightSecond');
+    // prevSecond.classList.remove(prevSecond.className);
+    // prevSecond.classList.add('prevLeftSecond');
 
     // next = nextAll(nextSecond);
 	// next.forEach(function(el) {
@@ -39,6 +94,12 @@ function moveToSelected(element) {
     //     el.classList.add('hideLeft');
 	// });
 
+}
+
+const hide = (mass, flag) => { 
+    mass.forEach(element => {
+    element.className='hide';
+    });
 }
 
 // function nextAll(elem) {

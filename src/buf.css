@@ -24,25 +24,6 @@ div img {
     transition: width 1s;
 }
 
-/* div.hideLeft {
-    left: 0%;
-    opacity: 0;
-    transform: translateY(50%) translateX(-50%);
-}
-
-div.hideLeft img {
-    width: 200px;
-}
-
-div.hideRight {
-    left: 100%;
-    opacity: 0;
-    transform: translateY(50%) translateX(-50%);
-}
-
-div.hideRight img {
-    width: 200px;
-} */
 
 div.prev {
     z-index: 5;
@@ -56,18 +37,29 @@ div.prev img {
     width: 300px;
 }
 
-div.prevLeftSecond {
+div.leftHide {
     z-index: 4;
     left: 15%;
     transform: translateY(50%) translateX(-50%);
     opacity: 0;
 }
 
-div.prevLeftSecond img {
+div.leftHide img {
     width: 200px;
 }
 
-div.selected {
+div.hide {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0;
+}
+
+div.hide img {
+    width: 200px;
+}
+
+div.current {
     z-index: 10;
     left: 50%;
     transform: translateY(0px) translateX(-50%);
@@ -84,14 +76,14 @@ div.next img {
     width: 300px;
 }
 
-div.nextRightSecond {
+div.rightHide {
     z-index: 4;
     left: 85%;
     transform: translateY(50%) translateX(-50%);
     opacity: 0;
 }
 
-div.nextRightSecond img {
+div.rightHide img {
     width: 200px;
 }
 
