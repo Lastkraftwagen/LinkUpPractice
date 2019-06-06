@@ -96,11 +96,22 @@ function moveToSelected(element) {
 
 }
 
-const hide = (mass, flag) => { 
+const hide = (mass) => { 
     mass.forEach(element => {
     element.className='hide';
     });
 }
+
+// const hide = (mass, flag) => { 
+//     mass.forEach(element => {
+//         if(flag){
+//             if(element.className != 'prev' || element.className != 'next'){
+//                 element.className='hide';
+//             }
+//         }
+//     });
+// }
+
 
 // function nextAll(elem) {
 //     var next = false;
