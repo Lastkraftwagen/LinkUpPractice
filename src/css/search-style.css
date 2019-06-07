@@ -1,10 +1,16 @@
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Raleway";
     src: url("../assets/fonts/RalewayLight/RalewayLight.eot");
-    src: url("../assets/fonts/RalewayLight/RalewayLight.eot?#iefix")format("embedded-opentype"), 
-    url("../assets/fonts/RalewayLight/RalewayLight.woff") format("woff"), 
-    url("../assets/fonts/RalewayLight/RalewayLight.ttf") format("truetype");
+    src: url("../assets/fonts/RalewayLight/RalewayLight.eot?#iefix")
+        format("embedded-opentype"), 
+        url("../assets/fonts/RalewayLight/RalewayLight.woff") 
+        format("woff"), 
+        url("../assets/fonts/RalewayLight/RalewayLight.ttf") 
+        format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -12,16 +18,17 @@
 @font-face {
     font-family: "RalewayB";
     src: url("../assets/fonts/RalewayBold/RalewayBold.eot");
-    src: url("../assets/fonts/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
-    url("../assets/fonts/RalewayBold/RalewayBold.woff") format("woff"), 
-    url("../assets/fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+    src: url("../assets/fonts/RalewayBold/RalewayBold.eot?#iefix")
+        format("embedded-opentype"), 
+        url("../assets/fonts/RalewayBold/RalewayBold.woff") 
+        format("woff"), 
+        url("../assets/fonts/RalewayBold/RalewayBold.ttf") 
+        format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-
-.d1 
-{
+.d1 {
     margin: 0 auto;
     height: 71px;
     /* filter: drop-shadow(3px 3px 4px gray);  */
@@ -33,12 +40,11 @@
     flex-wrap: wrap;
 }
 
-.drop_down
-{
+.drop_down {
     text-align: center;
     border-right: 1px solid lightgrey;
     margin-top: auto;
-    padding-top: 29px; 
+    padding-top: 29px;
     font-size: 13px;
     margin-bottom: auto;
     background-color: white;
@@ -57,24 +63,21 @@
     border: none;
     background: rgb(255, 255, 255);
     color: #9E9C9C;
-    }
+}
 
-#chkbx
-{
+#chkbx {
     display: none;
 }
-#chkbx:checked ~ .burger
-{
+
+#chkbx:checked~.burger {
     display: block;
 }
 
-#chkbx:checked ~ .drop_down
-{
+#chkbx:checked~.drop_down {
     border-radius: 10px 0 0 0;
 }
 
-.d1 .burger
-{
+.d1 .burger {
     height: auto;
     width: 15%;
     border-radius: 0px 0px 10px 10px;
@@ -83,8 +86,7 @@
     box-shadow: 3px 3px 4px gray;
 }
 
-.d1 .burger p
-{
+.d1 .burger p {
     border-top: 1px solid lightgray;
     margin: 0;
     padding: 20px;

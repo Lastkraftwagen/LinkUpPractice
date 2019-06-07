@@ -1,11 +1,10 @@
-
-@media only  screen and (max-width: 1280px) {
-    .search_text
-    {
+@media only screen and (max-width: 1280px) {
+    .search_text {
         flex-direction: column;
     }
 }
-@media only  screen and (max-width: 1050px) {
+
+@media only screen and (max-width: 1050px) {
     .logo {
         margin: 0 auto;
     }
@@ -13,7 +12,6 @@
         flex-direction: column;
         border-bottom: 1px solid lightgray;
         height: auto;
-
     }
     .search_block {
         margin-top: 0px;
@@ -25,8 +23,7 @@
         align-items: center;
         margin-right: 0px;
     }
-    
-    .burger-line{
+    .burger-line {
         position: absolute;
         width: 35px;
         height: 3px;
@@ -34,8 +31,7 @@
         background-color: #fff;
         transition: .5s all;
     }
-    .lines
-    {
+    .lines {
         position: absolute;
         cursor: pointer;
         width: 35px;
@@ -43,41 +39,33 @@
         top: 10px;
         right: 30px;
     }
-
-    header .second, .third{
+    header .second, .third {
         top: 15px;
     }
-
-    header .fourth{
+    header .fourth {
         top: 25px;
     }
-
-    #check-menu:checked ~ .topnav{
+    #check-menu:checked~.topnav {
         display: flex;
         flex-direction: column;
     }
-
-    #check-menu:checked ~ .lines .first{
+    #check-menu:checked~.lines .first {
         display: none;
     }
-
-    #check-menu:checked ~ .lines .second{
+    #check-menu:checked~.lines .second {
         transform: rotate(45deg);
     }
-
-    #check-menu:checked ~ .lines .third{
+    #check-menu:checked~.lines .third {
         transform: rotate(-45deg);
     }
-
-    #check-menu:checked ~ .lines .fourth{
+    #check-menu:checked~.lines .fourth {
         display: none;
     }
     .topblock {
         height: 600px;
     }
-    .toptext
-    {
-    font-size: 46px;
+    .toptext {
+        font-size: 46px;
     }
     .withline {
         border-left: none;
@@ -106,17 +94,14 @@
         width: 270px;
         height: 270px;
         margin-top: 0px;
-    }   
+    }
     .slider div .text {
         width: 98%;
     }
-    .gallery
-    {
+    .gallery {
         width: 60%;
     }
-
-    .footer a
-    {
+    .footer a {
         margin: 10px;
         font-size: 10px
     }
