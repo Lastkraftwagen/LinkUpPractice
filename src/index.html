@@ -6,19 +6,27 @@
 
     <script src="/js/script.js"></script>
     <meta charset="UTF-8">
-
     <script src="/js/buff.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/carousel-style.css" />
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="/css/search-style.css" />
     <link rel="stylesheet" type="text/css" href="/css/img-style.css" />
     <link rel="stylesheet" type="text/css" href="/css/small-screen.css" />
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <img class="logo" src="assets/images/logo.png">
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" class="lines">
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+        </label>
         <div class="topnav">
             <a class="withline" href="#">SIGN UP</a>
             <a href="#">LOG IN</a>
@@ -34,7 +42,8 @@
                 <p>INNOVATE &#8226 LIST &#8226 CONNECT</p>
                 <div class="d1">
                     <input type="checkbox" id="chkbx" />
-                    <label class="drop_down" for="chkbx">Category ↓</label>
+                    <label onclick="showcat()" id = "drop_down_id" 
+                    class="drop_down" for="chkbx">Category <i class="fa fa-sort-down"></i></label>
                     <input type="text" placeholder="Search" />
                     <button type="submit">START SEARCHING</button>
                     <div class="burger">

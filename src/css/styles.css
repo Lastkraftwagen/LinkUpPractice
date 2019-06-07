@@ -48,6 +48,7 @@ header {
     justify-content: space-between;
 }
 
+
 .logo {
     max-height: 60px;
     margin-left: 100px
@@ -67,6 +68,13 @@ header {
     margin-left: 20px;
     padding: 20px;
     font-family: "Raleway";
+}
+#check-menu{
+    display: none;
+}
+
+.topnav a:hover {
+    background-color: #f3f4fc;
 }
 
 /*----------------------------------------------------------------------*/
