@@ -103,19 +103,30 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 300px;
-    width: 75%;
+    width: 80%;
     height: 280px;
 }
 
 .toptext {
     font-size: 56px;
-    margin-bottom: 0;
+    margin: 0;
     color: rgb(92, 92, 92);
     font-family: "RalewayB";
 }
 
 .green {
     color: green;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.search_text
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 
 /*----------------------------------------------------------------------*/
